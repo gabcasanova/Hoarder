@@ -11,7 +11,8 @@ const newError = (name: string) => {
 type SearchMovieRequest = {
   query: {
     name: string
-    page?: number
+    page?: number,
+    language?: string
   }
 }
 
@@ -19,6 +20,7 @@ export const searchMovie = async (req: SearchMovieRequest) => {
   const parameters = {
     query: req.query.name as string,
     page: req.query.page as number,
+    language: req.query.language as string
   }
   try {
     const res = await moviedb.searchMovie(parameters)

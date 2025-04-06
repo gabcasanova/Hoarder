@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-hoarder-dark: #0e0214;
+  --color-hoarder-base: #22092C;
+  --color-hoarder-primary: #BE3144;
+  --color-hoarder-secondary: #872341;
+  --color-hoarder-accent: #F05941;
+}
+
+/* Custom styles */
+.hoarderTextbox {
+  @apply m-2 p-2 pl-4 rounded-full bg-hoarder-primary text-white focus:outline-1 focus:outline-hoarder-accent; 
+}
+
+.hoarderButton {
+  @apply m-2 p-2 rounded-full bg-hoarder-accent cursor-pointer hover:brightness-120 active:brightness-80 duration-300;
+}

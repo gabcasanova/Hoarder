@@ -16,3 +16,7 @@
 .hoarderButton {
   @apply m-2 p-2 rounded-full bg-hoarder-accent cursor-pointer hover:brightness-120 active:brightness-80 duration-300;
 }
+
+body {
+  overflow-y: scroll; /* Show scrollbars */
+}

@@ -5,8 +5,12 @@ type Props = {
   params: { query: string }
 }
 
-export default async function Page({ params }: Props) {
-  const { query } = await params;
+export default async function Page({ 
+  searchParams 
+}: {
+  searchParams: {[key: string]: string | string[] | undefined}
+}) {
+  const query = searchParams.query as string;
   const searchResults = await searchMovie({query: {name: query, language: "pt-br"}})
   
   const posterPath = "https://image.tmdb.org/t/p/w500"

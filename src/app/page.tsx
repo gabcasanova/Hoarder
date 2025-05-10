@@ -1,4 +1,5 @@
-// Main Page.
+// Homepage:
+// Main page of the website.
 
 export default function Page() {
   return (

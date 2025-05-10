@@ -1,4 +1,4 @@
-// Search results page;:
+// Search results page:
 // Displays information queried from the MovieDB using the API.
 
 import { Movie, searchMovie } from "@/lib/moviedb";

@@ -20,6 +20,7 @@ export default function Searchbox() {
 
   return (
     <div className="flex items-center">
+      {/* Text Field */}
       <input className="hoarderTextbox w-[500px]"
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && searchQuery()} 
@@ -27,8 +28,10 @@ export default function Searchbox() {
         type="text"
         id="searchbox"
         value={query}
+        autoComplete="off"
       />
 
+      {/* Button */}
       <div className="ml-[-50px]">
         <button className="h-[40px] w-[40px] hoarderButton text-white"
                 onClick={searchQuery}>

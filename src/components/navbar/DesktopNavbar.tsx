@@ -1,3 +1,6 @@
+// Navbar that is only displayed when the user is 
+// visiting the site on a desktop.
+
 import Link from "next/link";
 
 import { Josefin_Sans } from "next/font/google"

@@ -1,3 +1,6 @@
+// Search results page;:
+// Displays information queried from the MovieDB using the API.
+
 import { Movie, searchMovie } from "@/lib/moviedb";
 import Image from "next/image";
 

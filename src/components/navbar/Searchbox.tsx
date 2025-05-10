@@ -1,5 +1,7 @@
 'use client'
 
+// Searchbox that is used in the navbars.
+
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";

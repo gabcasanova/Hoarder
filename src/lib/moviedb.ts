@@ -1,3 +1,6 @@
+// Global exported functions to query from the MovieDB api
+// using the node.js MovieDB library. 
+
 import { MovieDb } from "moviedb-promise"
 const moviedb = new MovieDb(process.env.TMDB_API_KEY!)
 export default moviedb;

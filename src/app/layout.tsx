@@ -18,7 +18,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
             </div>
           </header>
 
-          <main className="p-3 flex-grow bg-hoarder-base text-white">
+          <main className="p-3 flex flex-col flex-grow bg-hoarder-base text-white">
             {children}
           </main>
 

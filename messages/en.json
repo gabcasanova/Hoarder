@@ -1,5 +1,17 @@
 {
   "navbar": {
     "searchbox": "Search tv shows, movies..."
+  },
+  "searchpage": {
+    "results": "Results for:"
+  },
+  "login": {
+    "signin": "Sign-In",
+    "desc": "It's good to see you again.",
+
+    "form": {
+      "email": "E-mail",
+      "password": "Password"
+    }
   }
 }

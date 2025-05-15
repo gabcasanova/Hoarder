@@ -1,6 +1,8 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getTranslations } from "next-intl/server";
+import React, { FormEvent } from "react";
+import LoginForm from "./LoginForm";
 
 export default async function Page() {
 	const t = await getTranslations()
@@ -17,31 +19,8 @@ export default async function Page() {
 				</div>
 
 				{/* Login Form */}
-				<form className="mr-3">
-					{/* Email field */}
-					<input 
-						className="hoarderTextbox w-full" 
-						type="text" 
-						id="email" 
-						name="email" 
-						placeholder={ t("login.form.email") }
-						autoComplete="off"
-					/>
-					<br />
-
-					{/* Password field */}
-					<input 
-						className="hoarderTextbox w-full" 
-						type="password" 
-						id="password" 
-						name="password" 
-						placeholder={ t("login.form.password") }
-					/>
-
-					<button className="hoarderButton w-20" type="submit"><FontAwesomeIcon icon={faRightToBracket} /></button>
-				</form>
+				<LoginForm />
 			</div>
-
 		</div>
 	);
 }

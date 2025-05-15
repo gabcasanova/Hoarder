@@ -12,6 +12,7 @@ import { getUserByEmail } from '@/lib/queries';
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
 
+  // Sign-In logic.
   providers: [
     Credentials({
       async authorize(credentials) {
@@ -49,4 +50,18 @@ export const { auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
+
+  // Add User's ID as session token.
+  callbacks: {
+    jwt({ token, user }) {
+      if (user) { 
+        token.id = user.id as string
+      }
+      return token
+    },
+    session({ session, token }) {
+      session.user.id = token.id as string
+      return session
+    },
+  },
 })

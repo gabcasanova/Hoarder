@@ -15,5 +15,8 @@
       "error": "Invalid credentials.",
       "wrong": "Something went wrong."
     }
+  },
+  "dashboard": {
+    "welcome": "Welcome to your movie collection,"
   }
 }
